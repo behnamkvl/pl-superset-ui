@@ -1,6 +1,6 @@
 {
   "name": "@pl-superset-ui/plugin-chart-composed",
-  "version": "0.23.5",
+  "version": "0.23.6",
   "description": "Superset Chart - Chart Composed",
   "pluginName": "ComposedChartPlugin",
   "sideEffects": false,

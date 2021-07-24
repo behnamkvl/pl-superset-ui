@@ -1,6 +1,6 @@
 {
   "name": "@pl-superset-ui/plugin-chart-pivot-table",
-  "version": "0.11.3",
+  "version": "0.11.4",
   "description": "Superset Chart - Pivot Table",
   "pluginName": "PivotTableChartPlugin",
   "sideEffects": false,
