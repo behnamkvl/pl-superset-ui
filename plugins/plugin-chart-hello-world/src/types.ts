@@ -29,12 +29,9 @@ interface HelloWorldCustomizeProps {
   headerText: string;
 }
 
-export type HelloWorldQueryFormData = QueryFormData &
-  HelloWorldStylesProps &
-  HelloWorldCustomizeProps;
+export type HelloWorldQueryFormData = QueryFormData & HelloWorldStylesProps & HelloWorldCustomizeProps;
 
-export type HelloWorldProps = HelloWorldStylesProps &
-  HelloWorldCustomizeProps & {
+export type HelloWorldProps = HelloWorldStylesProps & HelloWorldCustomizeProps & {
     data: TimeseriesDataRecord[];
     // add typing here for the props you pass in from transformProps.ts!
   };
