@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.6](https://github.com/behnamkvl/pl-superset-ui/compare/@pl-superset-ui/plugin-chart-pivot-table@0.11.5...@pl-superset-ui/plugin-chart-pivot-table@0.11.6) (2021-07-24)
+
+**Note:** Version bump only for package @pl-superset-ui/plugin-chart-pivot-table
+
+
+
+
+
 ## [0.11.5](https://github.com/behnamkvl/pl-superset-ui/compare/@pl-superset-ui/plugin-chart-pivot-table@0.11.4...@pl-superset-ui/plugin-chart-pivot-table@0.11.5) (2021-07-24)
 
 **Note:** Version bump only for package @pl-superset-ui/plugin-chart-pivot-table
