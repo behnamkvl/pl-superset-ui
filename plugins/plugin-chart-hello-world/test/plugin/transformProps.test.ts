@@ -16,9 +16,9 @@ describe('HelloWorld tranformProps', () => {
     formData,
     width: 800,
     height: 600,
-    queriesData: [{
-      data: [{ name: 'Hulk', sum__num: 1, __timestamp: 599616000000 }],
-    }],
+    queriesData: [ {
+      data: [ { name: 'Hulk', sum__num: 1, __timestamp: 599616000000 } ],
+    } ],
   });
 
   it('should tranform chart props for viz', () => {

@@ -81,6 +81,7 @@ const Styles = styled.div<PieStylesProps>`
   height: ${({ height }) => height};
   width: ${({ width }) => width};
   overflow: auto;
+
   & .recharts-legend-item {
     cursor: pointer;
     white-space: nowrap;
