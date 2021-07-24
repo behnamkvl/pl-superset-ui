@@ -26,7 +26,7 @@ import { HelloWorldChartPlugin } from '../src';
  * treated correctly (e.g. formData from plugin controls
  * properly transform the data and/or any resulting props).
  */
-describe('@superset-ui/plugin-chart-hello-world', () => {
+describe('@pl-superset-ui/plugin-chart-hello-world', () => {
   it('exists', () => {
     expect(HelloWorldChartPlugin).toBeDefined();
   });
