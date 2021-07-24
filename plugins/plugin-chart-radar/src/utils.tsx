@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-import { LegendProps, RadarLabelRenderProps, Sector } from 'recharts';
+import { LegendProps, PieLabelRenderProps, Sector } from 'recharts';
 import React from 'react';
 import { getNumberFormatter, NumberFormats, t } from '@superset-ui/core';
 
@@ -33,7 +33,7 @@ export const LabelTypeNames = {
 };
 
 export const renderCustomizedLabel = (
-  labelProps: Partial<RadarLabelRenderProps> & { x: number; groupBy: string; labelType: string },
+  labelProps: Partial<PieLabelRenderProps> & { x: number; groupBy: string; labelType: string },
 ) => {
   const percent = labelProps.percent ? +labelProps.percent : 100;
 
