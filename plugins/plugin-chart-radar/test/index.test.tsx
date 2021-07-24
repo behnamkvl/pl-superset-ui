@@ -70,7 +70,7 @@ describe('plugin-chart-piw', () => {
   it('Chart with legend left / without labels', () => {
     getWrapper(legendLeftWithoutLabels);
     expect({
-      RadarChartProps: RechartsRadareChart.mock.calls[1],
+      RadarChartProps: RechartsRadarChart.mock.calls[1],
       RadarProps: Radar.mock.calls[1],
       LegendProps: Legend.mock.calls[1],
     }).toMatchSnapshot();
