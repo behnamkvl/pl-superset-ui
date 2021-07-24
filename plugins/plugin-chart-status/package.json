@@ -1,6 +1,6 @@
 {
   "name": "@pl-superset-ui/plugin-chart-status",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Superset Chart - Status",
   "sideEffects": false,
   "pluginName": "Status",
