@@ -179,7 +179,7 @@ const RadarChart: FC<RadarProps<string, string>> = memo(props => {
   if (isDonut) {
     radarProps.activeShape = activeShapeProps =>
       renderActiveShape({ ...activeShapeProps, groupBy, labelType, isDonut: true });
-      radarProps.onMouseEnter = onRadarEnter;
+    radarProps.onMouseEnter = onRadarEnter;
     radarProps.innerRadius = outerRadius - outerRadius * 0.2;
     radarProps.label = false;
   }
