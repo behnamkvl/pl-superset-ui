@@ -1,26 +1,26 @@
-## @pl-superset-ui/plugin-chart-pie
+## @superset-ui/plugin-chart-hello-world
 
-[![Version](https://img.shields.io/npm/v/@pl-superset-ui/plugin-chart-pie.svg?style=flat-square)](https://img.shields.io/npm/v/@pl-superset-ui/plugin-chart-pie.svg?style=flat-square)
 
-This plugin provides Pie for Superset.
+
+This plugin provides Hello World for Superset.
 
 ### Usage
 
 Configure `key`, which can be any `string`, and register the plugin. This `key` will be used to lookup this chart throughout the app.
 
 ```js
-import DonutPieChartPlugin from '@pl-superset-ui/plugin-chart-donut-pie';
+import HelloWorldChartPlugin from '@superset-ui/plugin-chart-hello-world';
 
-new DonutPieChartPlugin()
-  .configure({ key: 'behnamkvl-pie' })
+new HelloWorldChartPlugin()
+  .configure({ key: 'hello-world' })
   .register();
 ```
 
-Then use it via `SuperChart`. See [storybook](https://apache-superset.github.io/superset-ui/?selectedKind=plugin-chart-pie) for more details.
+Then use it via `SuperChart`. See [storybook](https://apache-superset.github.io/superset-ui/?selectedKind=plugin-chart-hello-world) for more details.
 
 ```js
 <SuperChart
-  chartType="behnamkvl-pie"
+  chartType="hello-world"
   width={600}
   height={600}
   formData={...}
@@ -33,10 +33,11 @@ Then use it via `SuperChart`. See [storybook](https://apache-superset.github.io/
 ### File structure generated
 
 ```
-├── README.md
 ├── package.json
+├── README.md
+├── tsconfig.json
 ├── src
-│   ├── DonutPie.tsx
+│   ├── HelloWorld.tsx
 │   ├── images
 │   │   └── thumbnail.png
 │   ├── index.ts
