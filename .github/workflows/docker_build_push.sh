@@ -27,4 +27,5 @@ else
   docker logout
   docker login --username "${DOCKERHUB_USER}" --password "${DOCKERHUB_TOKEN}"
   docker push "${REPOSITORY_NAME}:${TAG_NAME}"
+  docker push "${REPOSITORY_NAME}:latest"
 fi
