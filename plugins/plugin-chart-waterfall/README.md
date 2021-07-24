@@ -1,6 +1,6 @@
-## @superset-viz-plugins/plugin-chart-waterfall
+## @pl-superset-ui/plugin-chart-waterfall
 
-[![Version](https://img.shields.io/npm/v/@superset-viz-plugins/plugin-chart-waterfall.svg?style=flat-square)](https://img.shields.io/npm/v/@superset-viz-plugins/plugin-chart-waterfall.svg?style=flat-square)
+[![Version](https://img.shields.io/npm/v/@pl-superset-ui/plugin-chart-waterfall.svg?style=flat-square)](https://img.shields.io/npm/v/@pl-superset-ui/plugin-chart-waterfall.svg?style=flat-square)
 
 This plugin provides Waterfall for Superset.
 
@@ -9,16 +9,16 @@ This plugin provides Waterfall for Superset.
 Configure `key`, which can be any `string`, and register the plugin. This `key` will be used to lookup this chart throughout the app.
 
 ```js
-import WaterfallChartPlugin from '@superset-viz-plugins/plugin-chart-waterfall';
+import WaterfallChartPlugin from '@pl-superset-ui/plugin-chart-waterfall';
 
 new WaterfallChartPlugin()
-  .configure({ key: 'nielsen-oss-waterfall' })
+  .configure({ key: 'behnamkvl-waterfall' })
   .register();
 ```
 
 ```js
 <SuperChart
-  chartType="nielsen-oss-waterfall"
+  chartType="behnamkvl-waterfall"
   width={600}
   height={600}
   formData={...}

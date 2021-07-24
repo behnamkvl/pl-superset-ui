@@ -323,20 +323,20 @@ const config = {
         // include source code for plugins, but exclude node_modules and test files within them
         exclude: [
           /superset-ui.*\/node_modules\//,
-          /superset-viz-plugins.*\/node_modules\//,
+          /pl-superset-ui.*\/node_modules\//,
           /\.test.jsx?$/,
         ],
         include: [
           new RegExp(`${APP_DIR}/src`),
           /superset-ui.*\/src/,
-          /superset-viz-plugins.*\/src/,
+          /pl-superset-ui.*\/src/,
           new RegExp(`${APP_DIR}/.storybook`),
         ],
         use: [babelLoader],
       },
       {
         test: /\.css$/,
-        include: [APP_DIR, /superset-ui.+\/src/, /superset-viz-plugins.+\/src/],
+        include: [APP_DIR, /superset-ui.+\/src/, /pl-superset-ui.+\/src/],
         use: [
           isDevMode ? 'style-loader' : MiniCssExtractPlugin.loader,
           {
@@ -446,7 +446,7 @@ if (isDevMode) {
   Object.entries(packageConfig.dependencies).forEach(([pkg, version]) => {
     const srcPath = `./node_modules/${pkg}/src`;
     if (
-      (/superset-ui/.test(pkg) || /superset-viz-plugins/.test(pkg)) &&
+      (/superset-ui/.test(pkg) || /pl-superset-ui/.test(pkg)) &&
       fs.existsSync(srcPath)
     ) {
       console.log(

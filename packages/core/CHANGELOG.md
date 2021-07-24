@@ -5,7 +5,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## 0.1.2 (2020-12-30)
 
-**Note:** Version bump only for package @superset-viz-plugins/core
+**Note:** Version bump only for package @pl-superset-ui/core
 
 
 
@@ -13,7 +13,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## 0.1.1 (2020-12-30)
 
-**Note:** Version bump only for package @superset-viz-plugins/core
+**Note:** Version bump only for package @pl-superset-ui/core
 
 
 
@@ -24,4 +24,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* basic core package lib ([5f30462](https://github.com/nielsen-oss/superset-viz-plugins/commit/5f304621fbeea6554740eb2bfd156338f772429e))
+* basic core package lib ([5f30462](https://github.com/behnamkvl/pl-superset-ui/commit/5f304621fbeea6554740eb2bfd156338f772429e))

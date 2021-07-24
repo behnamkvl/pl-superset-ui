@@ -1,6 +1,6 @@
-## @superset-viz-plugins/plugin-chart-table-pivot
+## @pl-superset-ui/plugin-chart-table-pivot
 
-[![Version](https://img.shields.io/npm/v/@superset-viz-plugins/plugin-chart-table-pivot.svg?style=flat-square)](https://img.shields.io/npm/v/@superset-viz-plugins/plugin-chart-table-pivot-new.svg?style=flat-square)
+[![Version](https://img.shields.io/npm/v/@pl-superset-ui/plugin-chart-table-pivot.svg?style=flat-square)](https://img.shields.io/npm/v/@pl-superset-ui/plugin-chart-table-pivot-new.svg?style=flat-square)
 
 This plugin provides Table Pivot New for Superset.
 
@@ -12,13 +12,13 @@ Configure `key`, which can be any `string`, and register the plugin. This `key` 
 import TablePivotNewChartPlugin from '@superset-viz-plugin/plugin-chart-table-pivot';
 
 new TablePivotNewChartPlugin()
-  .configure({ key: 'nielsen-oss-table-pivot' })
+  .configure({ key: 'behnamkvl-table-pivot' })
   .register();
 ```
 
 ```js
 <SuperChart
-  chartType="nielsen-oss-pivot-table"
+  chartType="behnamkvl-pivot-table"
   width={600}
   height={600}
   formData={...}

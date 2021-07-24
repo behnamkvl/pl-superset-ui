@@ -1,5 +1,5 @@
 {
-  "name": "@superset-viz-plugins/plugin-chart-status",
+  "name": "@pl-superset-ui/plugin-chart-status",
   "version": "0.1.6",
   "description": "Superset Chart - Status",
   "sideEffects": false,
@@ -20,16 +20,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nielsen-oss/superset-viz-plugins.git"
+    "url": "git+https://github.com/behnamkvl/pl-superset-ui.git"
   },
   "keywords": [
     "superset"
   ],
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/nielsen-oss/superset-viz-plugins/issues"
+    "url": "https://github.com/behnamkvl/pl-superset-ui/issues"
   },
-  "homepage": "https://github.com/nielsen-oss/superset-viz-plugins#readme",
+  "homepage": "https://github.com/behnamkvl/pl-superset-ui#readme",
   "publishConfig": {
     "access": "public"
   },
