@@ -16,18 +16,12 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-import { HelloWorldChartPlugin } from '../src';
+import { buildQueryContext, QueryFormData } from '@superset-ui/core';
 
-/**
- * The example tests in this file act as a starting point, and
- * we encourage you to build more. These tests check that the
- * plugin loads properly, and focus on `transformProps`
- * to ake sure that data, controls, and props are all
- * treated correctly (e.g. formData from plugin controls
- * properly transform the data and/or any resulting props).
- */
-describe('@superset-ui/plugin-chart-hello-world', () => {
-  it('exists', () => {
-    expect(HelloWorldChartPlugin).toBeDefined();
-  });
-});
+export default function buildQuery(formData: QueryFormData) {
+  return buildQueryContext(formData, baseQueryObject => [
+    {
+      ...baseQueryObject,
+    },
+  ]);
+}
