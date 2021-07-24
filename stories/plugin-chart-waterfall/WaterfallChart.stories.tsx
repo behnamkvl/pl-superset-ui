@@ -25,7 +25,7 @@ import { legendTop } from '../../plugins/plugin-chart-waterfall/test/__mocks__/w
 import { extractTransformProps } from '../utils';
 
 export default {
-  title: 'Plugins/Waterfall Chart',
+  title: 'Plugins/Waterfall Chart new',
   component: WaterfallChart,
   argTypes: {
     xAxisDataKey: { table: { disable: true } },
