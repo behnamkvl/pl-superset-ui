@@ -21,6 +21,9 @@ import { styled, t, CategoricalColorNamespace } from '@superset-ui/core';
 import {
   RadarChart as RechartsRadarChart,
   Radar as RechartsRadar,
+  PolarGrid,
+  PolarAngleAxis,
+  PolarRadiusAxis,
   Cell,
   RechartsFunction,
   Legend,
@@ -180,6 +183,9 @@ const PieChart: FC<RadarProps<string, string>> = memo(props => {
     <Styles height={height} width={width} legendPosition={legendPosition} ref={rootRef}>
       {notification && <Notification onClick={closeNotification}>{notification}</Notification>}
       <RechartsRadarChart key={updater} width={chartWidth} height={height}>
+      <PolarGrid />
+      <PolarAngleAxis dataKey="subject" />
+      <PolarRadiusAxis angle={30} domain={[0, 150]} />
         {showLegend && (
           <Legend
             onClick={handleLegendClick}

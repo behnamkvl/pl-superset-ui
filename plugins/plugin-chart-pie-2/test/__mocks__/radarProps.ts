@@ -31,7 +31,7 @@ export const legendTopPercentage = {
   formData: formDataLegendTopPercent,
   height: 800,
   queriesData: [queryData],
-  width: 800,
+  width: 400,
   name: 'sssss',
   stroke: '#820a9d',
   fill: '#820a9d',
@@ -43,7 +43,7 @@ export const legendLeftWithoutLabels = {
     legendPosition: 'left',
     showLabels: false,
   },
-  height: 400,
+  height: 800,
   queriesData: [queryData],
   width: 800,
 };
