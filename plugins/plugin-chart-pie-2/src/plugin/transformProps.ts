@@ -34,7 +34,7 @@ type FormData<G extends string, DK extends string> = {
 };
 
 export default function transformProps<G extends string, DK extends string>(chartProps: ChartProps): RadarProps<G, DK> {
-  const { width, height, formData, queriesData } = chartProps;
+  const { name, stroke, fill, width, height, formData, queriesData } = chartProps;
   const {
     colorScheme,
     groupby,
@@ -48,9 +48,9 @@ export default function transformProps<G extends string, DK extends string>(char
   const data = queriesData[0].data as PieChartData<G, DK>[];
 
   return {
-    name: 'sssss',
-    stroke: '#82ca9d',
-    fill: '#82ca9d',
+    name,
+    stroke,
+    fill,
     dataKey: metric.label,
     width,
     legendPosition,
