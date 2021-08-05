@@ -155,6 +155,9 @@ const PieChart: FC<RadarProps<string, string>> = memo(props => {
     isSideLegend && legendWidth ? Math.max((outerRadius + chartMargin) * 2 + legendWidth, width) : width;
 
   const radarProps: RechartsRadarProps & { key?: string | number } = {
+    name: 'aaaa',
+    stroke: '#8884d8',
+    fill: '#8884d8',
     key: updater,
     data: currentData,
     dataKey,
