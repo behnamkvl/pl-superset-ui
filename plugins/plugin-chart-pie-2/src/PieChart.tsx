@@ -208,6 +208,7 @@ const PieChart: FC<RadarProps<string, string>> = memo(props => {
             ))}
           </RechartsRadar>
         )}
+      <Legend />
       </RechartsRadarChart>
     </Styles>
   );
