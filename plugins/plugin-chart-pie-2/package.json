@@ -1,8 +1,8 @@
 {
-  "name": "@pl-superset-ui/plugin-chart-pie",
+  "name": "@pl-superset-ui/plugin-chart-pie-2",
   "version": "0.7.9",
-  "description": "Superset Chart - Pie",
-  "pluginName": "PieChartPlugin",
+  "description": "Superset Chart - Pie - 2",
+  "pluginName": "PieChartPlugin2",
   "sideEffects": false,
   "main": "lib/index.js",
   "module": "esm/index.js",
