@@ -17,7 +17,7 @@
  * under the License.
  */
 import { ChartProps } from '@superset-ui/core';
-import { PieChartData, PieProps } from '../PieChart';
+import { PieChartData, RadarProps } from '../PieChart';
 import { LegendPosition } from '../utils';
 
 type FormData<G extends string, DK extends string> = {
@@ -33,7 +33,7 @@ type FormData<G extends string, DK extends string> = {
   legendPosition: LegendPosition;
 };
 
-export default function transformProps<G extends string, DK extends string>(chartProps: ChartProps): PieProps<G, DK> {
+export default function transformProps<G extends string, DK extends string>(chartProps: ChartProps): RadarProps<G, DK> {
   const { width, height, formData, queriesData } = chartProps;
   const {
     colorScheme,

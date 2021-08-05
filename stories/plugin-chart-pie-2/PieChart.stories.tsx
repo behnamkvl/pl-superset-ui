@@ -21,7 +21,7 @@ import { ChartProps, supersetTheme, ThemeProvider } from '@superset-ui/core';
 import PieChart from '../../plugins/plugin-chart-pie-2/src/PieChart';
 import { LabelTypes } from '../../plugins/plugin-chart-pie-2/src/utils';
 import transformProps from '../../plugins/plugin-chart-pie-2/src/plugin/transformProps';
-import { legendTopPercentage } from '../../plugins/plugin-chart-pie-2/test/__mocks__/pieProps';
+import { legendTopPercentage } from '../../plugins/plugin-chart-pie-2/test/__mocks__/radarProps';
 import { extractTransformProps } from '../utils';
 
 export default {

@@ -22,7 +22,7 @@ import * as recharts from 'recharts';
 import { supersetTheme, ThemeProvider } from '@superset-ui/core';
 import PieChartPlugin from '../src';
 import transformProps from '../src/plugin/transformProps';
-import { legendLeftWithoutLabels, legendTopPercentage } from './__mocks__/pieProps';
+import { legendLeftWithoutLabels, legendTopPercentage } from './__mocks__/radarProps';
 import PieChart from '../src/PieChart';
 
 jest.mock('recharts');
@@ -61,8 +61,8 @@ describe('plugin-chart-piw', () => {
   it('Chart with legend top / percentage labels ', () => {
     getWrapper(legendTopPercentage);
     expect({
-      PieChartProps: RechartsPieChart.mock.calls[1],
-      PieProps: Pie.mock.calls[1],
+      RadarChartProps: RechartsPieChart.mock.calls[1],
+      RadarProps: Pie.mock.calls[1],
       LegendProps: Legend.mock.calls[1],
     }).toMatchSnapshot();
   });
@@ -70,8 +70,8 @@ describe('plugin-chart-piw', () => {
   it('Chart with legend left / without labels', () => {
     getWrapper(legendLeftWithoutLabels);
     expect({
-      PieChartProps: RechartsPieChart.mock.calls[1],
-      PieProps: Pie.mock.calls[1],
+      RadarChartProps: RechartsPieChart.mock.calls[1],
+      RadarProps: Pie.mock.calls[1],
       LegendProps: Legend.mock.calls[1],
     }).toMatchSnapshot();
   });
