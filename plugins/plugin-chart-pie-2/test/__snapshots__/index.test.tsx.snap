@@ -14,23 +14,28 @@ Object {
             Array [
               Object {
                 "AVG(efficiency)": 0.0566666666666667,
-                "period": "2020",
+                "subject": "2020",
+                "fullMark": 150,
               },
               Object {
                 "AVG(efficiency)": 0.038,
-                "period": "2018",
+                "subject": "2018",
+                "fullMark": 150,
               },
               Object {
                 "AVG(efficiency)": 0.0162068965517241,
-                "period": "2019",
+                "subject": "2019",
+                "fullMark": 150,
               },
               Object {
                 "AVG(efficiency)": 0.0138888888888889,
-                "period": "Total Period",
+                "subject": "Total subject",
+                "fullMark": 150,
               },
               Object {
                 "AVG(efficiency)": 0.011304347826087,
-                "period": "2017",
+                "subject": "2017",
+                "fullMark": 150,
               },
             ]
           }
@@ -88,23 +93,28 @@ Object {
       "data": Array [
         Object {
           "AVG(efficiency)": 0.0566666666666667,
-          "period": "2020",
+          "subject": "2020",
+          "fullMark": 150,
         },
         Object {
           "AVG(efficiency)": 0.038,
-          "period": "2018",
+          "subject": "2018",
+          "fullMark": 150,
         },
         Object {
           "AVG(efficiency)": 0.0162068965517241,
-          "period": "2019",
+          "subject": "2019",
+          "fullMark": 150,
         },
         Object {
           "AVG(efficiency)": 0.0138888888888889,
-          "period": "Total Period",
+          "subject": "Total subject",
+          "fullMark": 150,
         },
         Object {
           "AVG(efficiency)": 0.011304347826087,
-          "period": "2017",
+          "subject": "2017",
+          "fullMark": 150,
         },
       ],
       "dataKey": "AVG(efficiency)",
@@ -134,7 +144,8 @@ Object {
           "id": "2020",
           "payload": Object {
             "AVG(efficiency)": 0.0566666666666667,
-            "period": "2020",
+            "subject": "2020",
+            "fullMark": 150,
           },
           "type": "circle",
           "value": "2020",
@@ -144,7 +155,8 @@ Object {
           "id": "2018",
           "payload": Object {
             "AVG(efficiency)": 0.038,
-            "period": "2018",
+            "subject": "2018",
+            "fullMark": 150,
           },
           "type": "circle",
           "value": "2018",
@@ -154,27 +166,30 @@ Object {
           "id": "2019",
           "payload": Object {
             "AVG(efficiency)": 0.0162068965517241,
-            "period": "2019",
+            "subject": "2019",
+            "fullMark": 150,
           },
           "type": "circle",
           "value": "2019",
         },
         Object {
           "color": "#d62728",
-          "id": "Total Period",
+          "id": "Total subject",
           "payload": Object {
             "AVG(efficiency)": 0.0138888888888889,
-            "period": "Total Period",
+            "subject": "Total subject",
+            "fullMark": 150,
           },
           "type": "circle",
-          "value": "Total Period",
+          "value": "Total subject",
         },
         Object {
           "color": "#9467bd",
           "id": "2017",
           "payload": Object {
             "AVG(efficiency)": 0.011304347826087,
-            "period": "2017",
+            "subject": "2017",
+            "fullMark": 150,
           },
           "type": "circle",
           "value": "2017",
@@ -204,7 +219,8 @@ Object {
                 "id": "2020",
                 "payload": Object {
                   "AVG(efficiency)": 0.0566666666666667,
-                  "period": "2020",
+                  "subject": "2020",
+                  "fullMark": 150,
                 },
                 "type": "circle",
                 "value": "2020",
@@ -214,7 +230,8 @@ Object {
                 "id": "2018",
                 "payload": Object {
                   "AVG(efficiency)": 0.038,
-                  "period": "2018",
+                  "subject": "2018",
+                  "fullMark": 150,
                 },
                 "type": "circle",
                 "value": "2018",
@@ -224,27 +241,30 @@ Object {
                 "id": "2019",
                 "payload": Object {
                   "AVG(efficiency)": 0.0162068965517241,
-                  "period": "2019",
+                  "subject": "2019",
+                  "fullMark": 150,
                 },
                 "type": "circle",
                 "value": "2019",
               },
               Object {
                 "color": "#d62728",
-                "id": "Total Period",
+                "id": "Total subject",
                 "payload": Object {
                   "AVG(efficiency)": 0.0138888888888889,
-                  "period": "Total Period",
+                  "subject": "Total subject",
+                  "fullMark": 150,
                 },
                 "type": "circle",
-                "value": "Total Period",
+                "value": "Total subject",
               },
               Object {
                 "color": "#9467bd",
                 "id": "2017",
                 "payload": Object {
                   "AVG(efficiency)": 0.011304347826087,
-                  "period": "2017",
+                  "subject": "2017",
+                  "fullMark": 150,
                 },
                 "type": "circle",
                 "value": "2017",
@@ -285,7 +305,8 @@ Object {
           "id": "2020",
           "payload": Object {
             "AVG(efficiency)": 0.0566666666666667,
-            "period": "2020",
+            "subject": "2020",
+            "fullMark": 150,
           },
           "type": "circle",
           "value": "2020",
@@ -295,7 +316,8 @@ Object {
           "id": "2018",
           "payload": Object {
             "AVG(efficiency)": 0.038,
-            "period": "2018",
+            "subject": "2018",
+            "fullMark": 150,
           },
           "type": "circle",
           "value": "2018",
@@ -305,27 +327,30 @@ Object {
           "id": "2019",
           "payload": Object {
             "AVG(efficiency)": 0.0162068965517241,
-            "period": "2019",
+            "subject": "2019",
+            "fullMark": 150,
           },
           "type": "circle",
           "value": "2019",
         },
         Object {
           "color": "#d62728",
-          "id": "Total Period",
+          "id": "Total subject",
           "payload": Object {
             "AVG(efficiency)": 0.0138888888888889,
-            "period": "Total Period",
+            "subject": "Total subject",
+            "fullMark": 150,
           },
           "type": "circle",
-          "value": "Total Period",
+          "value": "Total subject",
         },
         Object {
           "color": "#9467bd",
           "id": "2017",
           "payload": Object {
             "AVG(efficiency)": 0.011304347826087,
-            "period": "2017",
+            "subject": "2017",
+            "fullMark": 150,
           },
           "type": "circle",
           "value": "2017",
@@ -354,7 +379,8 @@ Object {
                 "id": "2020",
                 "payload": Object {
                   "AVG(efficiency)": 0.0566666666666667,
-                  "period": "2020",
+                  "subject": "2020",
+                  "fullMark": 150,
                 },
                 "type": "circle",
                 "value": "2020",
@@ -364,7 +390,8 @@ Object {
                 "id": "2018",
                 "payload": Object {
                   "AVG(efficiency)": 0.038,
-                  "period": "2018",
+                  "subject": "2018",
+                  "fullMark": 150,
                 },
                 "type": "circle",
                 "value": "2018",
@@ -374,27 +401,30 @@ Object {
                 "id": "2019",
                 "payload": Object {
                   "AVG(efficiency)": 0.0162068965517241,
-                  "period": "2019",
+                  "subject": "2019",
+                  "fullMark": 150,
                 },
                 "type": "circle",
                 "value": "2019",
               },
               Object {
                 "color": "#d62728",
-                "id": "Total Period",
+                "id": "Total subject",
                 "payload": Object {
                   "AVG(efficiency)": 0.0138888888888889,
-                  "period": "Total Period",
+                  "subject": "Total subject",
+                  "fullMark": 150,
                 },
                 "type": "circle",
-                "value": "Total Period",
+                "value": "Total subject",
               },
               Object {
                 "color": "#9467bd",
                 "id": "2017",
                 "payload": Object {
                   "AVG(efficiency)": 0.011304347826087,
-                  "period": "2017",
+                  "subject": "2017",
+                  "fullMark": 150,
                 },
                 "type": "circle",
                 "value": "2017",
@@ -415,23 +445,28 @@ Object {
             Array [
               Object {
                 "AVG(efficiency)": 0.0566666666666667,
-                "period": "2020",
+                "subject": "2020",
+                "fullMark": 150,
               },
               Object {
                 "AVG(efficiency)": 0.038,
-                "period": "2018",
+                "subject": "2018",
+                "fullMark": 150,
               },
               Object {
                 "AVG(efficiency)": 0.0162068965517241,
-                "period": "2019",
+                "subject": "2019",
+                "fullMark": 150,
               },
               Object {
                 "AVG(efficiency)": 0.0138888888888889,
-                "period": "Total Period",
+                "subject": "Total subject",
+                "fullMark": 150,
               },
               Object {
                 "AVG(efficiency)": 0.011304347826087,
-                "period": "2017",
+                "subject": "2017",
+                "fullMark": 150,
               },
             ]
           }
@@ -486,23 +521,28 @@ Object {
       "data": Array [
         Object {
           "AVG(efficiency)": 0.0566666666666667,
-          "period": "2020",
+          "subject": "2020",
+          "fullMark": 150,
         },
         Object {
           "AVG(efficiency)": 0.038,
-          "period": "2018",
+          "subject": "2018",
+          "fullMark": 150,
         },
         Object {
           "AVG(efficiency)": 0.0162068965517241,
-          "period": "2019",
+          "subject": "2019",
+          "fullMark": 150,
         },
         Object {
           "AVG(efficiency)": 0.0138888888888889,
-          "period": "Total Period",
+          "subject": "Total subject",
+          "fullMark": 150,
         },
         Object {
           "AVG(efficiency)": 0.011304347826087,
-          "period": "2017",
+          "subject": "2017",
+          "fullMark": 150,
         },
       ],
       "dataKey": "AVG(efficiency)",

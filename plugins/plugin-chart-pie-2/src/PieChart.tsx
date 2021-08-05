@@ -19,12 +19,12 @@
 import React, { useState, FC, useEffect, memo, useRef, useCallback } from 'react';
 import { styled, t, CategoricalColorNamespace } from '@superset-ui/core';
 import {
-  PieChart as RechartsPieChart,
-  Pie as RechartsPie,
+  RadarChart as RechartsRadarChart,
+  Radar as RechartsRadar,
   Cell,
   RechartsFunction,
   Legend,
-  PieProps as RechartsPieProps,
+  RadarProps as RechartsRadarProps,
   LegendType,
 } from 'recharts';
 import { LegendPosition, renderActiveShape, getLegendProps, ActiveShapeProps } from './utils';
@@ -48,7 +48,7 @@ type GroupBy<G extends string> = Record<G, string>;
 
 export type PieChartData<G extends string, DK extends string> = GroupBy<G> & Record<DK, number>;
 
-export type PieProps<G extends string = string, DK extends string = string> = {
+export type radarProps<G extends string = string, DK extends string = string> = {
   height: number;
   width: number;
   data: PieChartData<G, DK>[];
@@ -88,13 +88,12 @@ const Styles = styled.div<PieStylesProps>`
   }
 `;
 
-const PieChart: FC<PieProps<string, string>> = memo(props => {
+const PieChart: FC<radarProps<string, string>> = memo(props => {
   const {
     dataKey,
     data,
     height,
     width,
-    isDonut,
     colorScheme,
     showLegend,
     showLabels,
@@ -103,7 +102,6 @@ const PieChart: FC<PieProps<string, string>> = memo(props => {
     legendPosition,
   } = props;
   const [notification, setNotification] = useState<string | null>(null);
-  const [activeIndex, setActiveIndex] = useState<number>(0);
   const [disabledDataKeys, setDisabledDataKeys] = useState<string[]>([]);
   const [legendWidth, setLegendWidth] = useState<number | null>(0);
   const [updater, setUpdater] = useState<number>(0);
@@ -136,14 +134,8 @@ const PieChart: FC<PieProps<string, string>> = memo(props => {
     forceUpdate();
   }, [forceUpdate, props]);
 
-  const onPieEnter = (data: object, index: number) => setActiveIndex(index);
   const closeNotification = () => setNotification(null);
 
-  const onClick = () => {
-    if (isExplore) {
-      setNotification(t('Sector was clicked, filter will be emitted on a dashboard'));
-    }
-  };
 
   const chartMargin = showLabels ? LABELS_MARGIN : 20;
 
@@ -163,31 +155,20 @@ const PieChart: FC<PieProps<string, string>> = memo(props => {
   const chartWidth =
     isSideLegend && legendWidth ? Math.max((outerRadius + chartMargin) * 2 + legendWidth, width) : width;
 
-  const pieProps: RechartsPieProps & { key?: string | number } = {
-    activeIndex,
+  const radarProps: RechartsRadarProps & { key?: string | number } = {
     key: updater,
     data: currentData,
     dataKey,
-    cx: isSideLegend ? outerRadius + chartMargin : '50%',
-    outerRadius,
     label: showLabels
       ? labelProps => renderActiveShape({ ...labelProps, groupBy, labelType } as ActiveShapeProps)
       : false,
-    onClick,
   };
 
-  if (isDonut) {
-    pieProps.activeShape = activeShapeProps =>
-      renderActiveShape({ ...activeShapeProps, groupBy, labelType, isDonut: true });
-    pieProps.onMouseEnter = onPieEnter;
-    pieProps.innerRadius = outerRadius - outerRadius * 0.2;
-    pieProps.label = false;
-  }
 
   return (
     <Styles height={height} width={width} legendPosition={legendPosition} ref={rootRef}>
       {notification && <Notification onClick={closeNotification}>{notification}</Notification>}
-      <RechartsPieChart key={updater} width={chartWidth} height={height}>
+      <RechartsRadarChart key={updater} width={chartWidth} height={height}>
         {showLegend && (
           <Legend
             onClick={handleLegendClick}
@@ -204,13 +185,13 @@ const PieChart: FC<PieProps<string, string>> = memo(props => {
           />
         )}
         {((isSideLegend && legendWidth) || !isSideLegend) && (
-          <RechartsPie {...pieProps}>
+          <RechartsRadar {...radarProps}>
             {currentData?.map(entry => (
               <Cell fill={CategoricalColorNamespace.getScale(colorScheme)(entry[groupBy])} />
             ))}
-          </RechartsPie>
+          </RechartsRadar>
         )}
-      </RechartsPieChart>
+      </RechartsRadarChart>
     </Styles>
   );
 });

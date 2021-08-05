@@ -1,5 +1,5 @@
 const formDataLegendTopPercent = {
-  groupby: 'period',
+  groupby: 'subject',
   metric: {
     label: 'AVG(efficiency)',
   },
@@ -11,17 +11,19 @@ const formDataLegendTopPercent = {
 };
 const queryData = {
   data: [
-    { period: '2020', 'AVG(efficiency)': 0.0566666666666667 },
+    { subject: '2020', 'AVG(efficiency)': 100, 'fullMark': 150 },
     {
-      period: '2018',
-      'AVG(efficiency)': 0.038,
+      subject: '2018',
+      'AVG(efficiency)': 50,
+      'fullMark': 150
     },
-    { period: '2019', 'AVG(efficiency)': 0.0162068965517241 },
+    { subject: '2019', 'AVG(efficiency)': 10, 'fullMark': 150 },
     {
-      period: 'Total Period',
-      'AVG(efficiency)': 0.0138888888888889,
+      subject: 'Total Subject',
+      'AVG(efficiency)': 100,
+      'fullMark': 150,
     },
-    { period: '2017', 'AVG(efficiency)': 0.011304347826087 },
+    { subject: '2017', 'AVG(efficiency)': 100, 'fullMark': 150 },
   ],
 };
 
