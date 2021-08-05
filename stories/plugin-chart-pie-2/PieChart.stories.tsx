@@ -18,15 +18,15 @@
  */
 import React from 'react';
 import { ChartProps, supersetTheme, ThemeProvider } from '@superset-ui/core';
-import PieChart from '../../plugins/plugin-chart-pie-2/src/PieChart';
-import { LabelTypes } from '../../plugins/plugin-chart-pie-2/src/utils';
-import transformProps from '../../plugins/plugin-chart-pie-2/src/plugin/transformProps';
-import { legendTopPercentage } from '../../plugins/plugin-chart-pie-2/test/__mocks__/radarProps';
+import RadarChart from '../../plugins/plugin-chart-radar/src/RadarChart';
+import { LabelTypes } from '../../plugins/plugin-chart-radar/src/utils';
+import transformProps from '../../plugins/plugin-chart-radar/src/plugin/transformProps';
+import { legendTopPercentage } from '../../plugins/plugin-chart-radar/test/__mocks__/radarProps';
 import { extractTransformProps } from '../utils';
 
 export default {
-  title: 'Plugins/Pie Chart 2',
-  component: PieChart,
+  title: 'Plugins/Radar Chart 2',
+  component: RadarChart,
   parameters: {
     chromatic: { delay: 2000 },
   },
@@ -48,7 +48,7 @@ export default {
 
 const DefaultTemplate = args => (
   <ThemeProvider theme={supersetTheme}>
-    <PieChart {...extractTransformProps({ args, props: legendTopPercentage, transformProps })} />
+    <RadarChart {...extractTransformProps({ args, props: legendTopPercentage, transformProps })} />
   </ThemeProvider>
 );
 
