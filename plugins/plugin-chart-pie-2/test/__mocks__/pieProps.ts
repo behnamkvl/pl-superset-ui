@@ -17,7 +17,7 @@ const queryData = {
       'AVG(efficiency)': 50,
       'fullMark': 150
     },
-    { subject: '2019', 'AVG(efficiency)': 10, 'fullMark': 150 },
+    { subject: '2019', 'AVG(efficiency)': 100, 'fullMark': 150 },
     {
       subject: 'Total Subject',
       'AVG(efficiency)': 100,
