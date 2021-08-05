@@ -22,7 +22,6 @@ import { LegendPosition } from '../utils';
 
 type FormData<G extends string, DK extends string> = {
   colorScheme: string;
-  isDonut: boolean;
   groupby: G;
   metric: {
     label: DK;
@@ -38,7 +37,6 @@ export default function transformProps<G extends string, DK extends string>(char
   const { width, height, formData, queriesData } = chartProps;
   const {
     colorScheme,
-    isDonut,
     groupby,
     metric,
     colorPicker,
@@ -55,11 +53,10 @@ export default function transformProps<G extends string, DK extends string>(char
     legendPosition,
     height,
     data: data.filter(item => item[metric.label] !== null).filter(item => item[groupby] !== null),
-    isDonut,
     baseColor: colorPicker,
     colorScheme,
     showLegend,
-    showLabels: isDonut || showLabels,
+    showLabels: showLabels,
     groupBy: groupby,
     labelType,
   };

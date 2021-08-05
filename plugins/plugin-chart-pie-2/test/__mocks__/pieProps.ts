@@ -45,14 +45,3 @@ export const legendLeftWithoutLabels = {
   width: 800,
 };
 
-export const categoryPercentageDonutNoLegend = {
-  formData: {
-    ...formDataLegendTopPercent,
-    labelType: 'categoryPercent',
-    showLegend: false,
-    isDonut: true,
-  },
-  height: 400,
-  queriesData: [queryData],
-  width: 800,
-};

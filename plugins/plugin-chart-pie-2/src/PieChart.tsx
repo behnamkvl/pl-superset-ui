@@ -53,7 +53,6 @@ export type radarProps<G extends string = string, DK extends string = string> = 
   width: number;
   data: PieChartData<G, DK>[];
   dataKey: DK;
-  isDonut?: boolean;
   onClick?: RechartsFunction;
   colorScheme: string;
   baseColor: string;

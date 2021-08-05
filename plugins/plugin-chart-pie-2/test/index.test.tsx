@@ -22,7 +22,7 @@ import * as recharts from 'recharts';
 import { supersetTheme, ThemeProvider } from '@superset-ui/core';
 import PieChartPlugin from '../src';
 import transformProps from '../src/plugin/transformProps';
-import { categoryPercentageDonutNoLegend, legendLeftWithoutLabels, legendTopPercentage } from './__mocks__/pieProps';
+import { legendLeftWithoutLabels, legendTopPercentage } from './__mocks__/pieProps';
 import PieChart from '../src/PieChart';
 
 jest.mock('recharts');
@@ -76,12 +76,4 @@ describe('plugin-chart-piw', () => {
     }).toMatchSnapshot();
   });
 
-  it('Chart Donut with category and percentage labels / without legend', () => {
-    getWrapper(categoryPercentageDonutNoLegend);
-    expect({
-      PieChartProps: RechartsPieChart.mock.calls[1],
-      PieProps: Pie.mock.calls[1],
-    }).toMatchSnapshot();
-    expect(Legend).not.toBeCalled();
-  });
 });

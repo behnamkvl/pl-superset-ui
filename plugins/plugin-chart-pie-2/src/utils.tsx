@@ -70,7 +70,6 @@ export type ActiveShapeProps = {
   };
   percent: number;
   value?: number;
-  isDonut?: boolean;
 };
 
 export const renderActiveShape = (props: ActiveShapeProps) => {
@@ -87,7 +86,6 @@ export const renderActiveShape = (props: ActiveShapeProps) => {
     payload,
     groupBy,
     labelType,
-    isDonut,
   } = props;
 
   const sin = Math.sin(-RADIAN * midAngle);
@@ -101,7 +99,7 @@ export const renderActiveShape = (props: ActiveShapeProps) => {
   const x = mx + (cos >= 0 ? 1 : -1) * 12;
   return (
     <g>
-      {isDonut && (
+      {(
         <>
           <text x={cx} y={cy} dy={8} textAnchor="middle" fill={fill}>
             {payload && payload[groupBy]}

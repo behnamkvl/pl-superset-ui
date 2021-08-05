@@ -44,7 +44,7 @@ const showLabels = {
     type: 'CheckboxControl',
     label: t('Show Labels'),
     renderTrigger: true,
-    visibility: ({ form_data }: { form_data: QueryFormData }) => form_data.is_donut === false,
+    visibility: ({ form_data }: { form_data: QueryFormData }) => false === false,
     default: true,
     description: t('Whether to display the labels. Note that the label only displays when the the 5% threshold.'),
   },
@@ -58,7 +58,7 @@ const labelType = {
     default: LabelTypes.percent,
     renderTrigger: true,
     visibility: ({ form_data }: { form_data: QueryFormData }) =>
-      form_data.is_donut === false && form_data.show_labels === true,
+      false === false && form_data.show_labels === true,
     choices: Object.values(LabelTypes).map(val => [val, LabelTypeNames[val as LabelTypes]]),
     description: t('What should be shown on the label?'),
   },
@@ -90,16 +90,6 @@ const legendPosition = {
   },
 };
 
-const isDonut = {
-  name: 'is_donut',
-  config: {
-    type: 'CheckboxControl',
-    label: t('Donut'),
-    default: false,
-    renderTrigger: true,
-    description: t('Do you want a donut or a pie?'),
-  },
-};
 
 export default {
   controlPanelSections: [
@@ -113,7 +103,6 @@ export default {
       expanded: true,
       controlSetRows: [
         ['color_scheme', 'label_colors'],
-        [isDonut],
         [showLabels, labelType],
         [showLegend, legendPosition],
       ],
