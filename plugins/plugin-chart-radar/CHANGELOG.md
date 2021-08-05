@@ -3,25 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [0.7.9](https://github.com/behnamkvl/pl-superset-ui/compare/@pl-superset-ui/plugin-chart-pie@0.7.8...@pl-superset-ui/plugin-chart-pie@0.7.9) (2021-07-24)
+## [0.7.9](https://github.com/behnamkvl/pl-superset-ui/compare/@pl-superset-ui/plugin-chart-radar@0.7.8...@pl-superset-ui/plugin-chart-radar@0.7.9) (2021-07-24)
 
-**Note:** Version bump only for package @pl-superset-ui/plugin-chart-pie
-
-
-
-
-
-## [0.7.8](https://github.com/behnamkvl/pl-superset-ui/compare/@pl-superset-ui/plugin-chart-pie@0.7.7...@pl-superset-ui/plugin-chart-pie@0.7.8) (2021-07-24)
-
-**Note:** Version bump only for package @pl-superset-ui/plugin-chart-pie
+**Note:** Version bump only for package @pl-superset-ui/plugin-chart-radar
 
 
 
 
 
-## [0.7.7](https://github.com/behnamkvl/pl-superset-ui/compare/@pl-superset-ui/plugin-chart-pie@0.7.6...@pl-superset-ui/plugin-chart-pie@0.7.7) (2021-07-24)
+## [0.7.8](https://github.com/behnamkvl/pl-superset-ui/compare/@pl-superset-ui/plugin-chart-radar@0.7.7...@pl-superset-ui/plugin-chart-radar@0.7.8) (2021-07-24)
 
-**Note:** Version bump only for package @pl-superset-ui/plugin-chart-pie
+**Note:** Version bump only for package @pl-superset-ui/plugin-chart-radar
+
+
+
+
+
+## [0.7.7](https://github.com/behnamkvl/pl-superset-ui/compare/@pl-superset-ui/plugin-chart-radar@0.7.6...@pl-superset-ui/plugin-chart-radar@0.7.7) (2021-07-24)
+
+**Note:** Version bump only for package @pl-superset-ui/plugin-chart-radar
 
 
 
@@ -29,7 +29,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## 0.7.6 (2021-07-24)
 
-**Note:** Version bump only for package @pl-superset-ui/plugin-chart-pie
+**Note:** Version bump only for package @pl-superset-ui/plugin-chart-radar
 
 
 
@@ -37,15 +37,15 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## 0.7.5 (2021-07-24)
 
-**Note:** Version bump only for package @pl-superset-ui/plugin-chart-pie
+**Note:** Version bump only for package @pl-superset-ui/plugin-chart-radar
 
 
 
 
 
-## [0.7.4](https://github.com/behnamkvl/pl-superset-ui/compare/@pl-superset-ui/plugin-chart-pie@0.7.3...@pl-superset-ui/plugin-chart-pie@0.7.4) (2021-05-09)
+## [0.7.4](https://github.com/behnamkvl/pl-superset-ui/compare/@pl-superset-ui/plugin-chart-radar@0.7.3...@pl-superset-ui/plugin-chart-radar@0.7.4) (2021-05-09)
 
-**Note:** Version bump only for package @pl-superset-ui/plugin-chart-pie
+**Note:** Version bump only for package @pl-superset-ui/plugin-chart-radar
 
 
 
@@ -53,7 +53,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## 0.7.3 (2021-05-06)
 
-**Note:** Version bump only for package @pl-superset-ui/plugin-chart-pie
+**Note:** Version bump only for package @pl-superset-ui/plugin-chart-radar
 
 
 
@@ -61,27 +61,27 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## 0.7.2 (2021-02-10)
 
-**Note:** Version bump only for package @pl-superset-ui/plugin-chart-pie
+**Note:** Version bump only for package @pl-superset-ui/plugin-chart-radar
 
 
 
 
 
-## [0.7.1](https://github.com/behnamkvl/pl-superset-ui/compare/@pl-superset-ui/plugin-chart-pie@0.7.0...@pl-superset-ui/plugin-chart-pie@0.7.1) (2021-02-08)
+## [0.7.1](https://github.com/behnamkvl/pl-superset-ui/compare/@pl-superset-ui/plugin-chart-radar@0.7.0...@pl-superset-ui/plugin-chart-radar@0.7.1) (2021-02-08)
 
-**Note:** Version bump only for package @pl-superset-ui/plugin-chart-pie
-
-
+**Note:** Version bump only for package @pl-superset-ui/plugin-chart-radar
 
 
 
-# [0.7.0](https://github.com/behnamkvl/pl-superset-ui/compare/@pl-superset-ui/plugin-chart-pie@0.5.0...@pl-superset-ui/plugin-chart-pie@0.7.0) (2021-01-28)
+
+
+# [0.7.0](https://github.com/behnamkvl/pl-superset-ui/compare/@pl-superset-ui/plugin-chart-radar@0.5.0...@pl-superset-ui/plugin-chart-radar@0.7.0) (2021-01-28)
 
 
 ### Features
 
 * migrate to superset 1.0 ([e53acfe](https://github.com/behnamkvl/pl-superset-ui/commit/e53acfed93ee1f39fcd8a63b065b284ab513b692))
-* pie story with full data flow ([#30](https://github.com/behnamkvl/pl-superset-ui/issues/30)) ([86f500e](https://github.com/behnamkvl/pl-superset-ui/commit/86f500ee3b59c90c564ca9a5eb6a5266eb10bbcb))
+* radar story with full data flow ([#30](https://github.com/behnamkvl/pl-superset-ui/issues/30)) ([86f500e](https://github.com/behnamkvl/pl-superset-ui/commit/86f500ee3b59c90c564ca9a5eb6a5266eb10bbcb))
 
 
 
@@ -98,23 +98,23 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [0.4.2](https://github.com/behnamkvl/pl-superset-ui/compare/@pl-superset-ui/plugin-chart-pie@0.4.1...@pl-superset-ui/plugin-chart-pie@0.4.2) (2021-01-04)
+## [0.4.2](https://github.com/behnamkvl/pl-superset-ui/compare/@pl-superset-ui/plugin-chart-radar@0.4.1...@pl-superset-ui/plugin-chart-radar@0.4.2) (2021-01-04)
 
-**Note:** Version bump only for package @pl-superset-ui/plugin-chart-pie
-
-
-
-
-
-## [0.4.1](https://github.com/behnamkvl/pl-superset-ui/compare/@pl-superset-ui/plugin-chart-pie@0.4.0...@pl-superset-ui/plugin-chart-pie@0.4.1) (2020-12-30)
-
-**Note:** Version bump only for package @pl-superset-ui/plugin-chart-pie
+**Note:** Version bump only for package @pl-superset-ui/plugin-chart-radar
 
 
 
 
 
-# [0.4.0](https://github.com/behnamkvl/pl-superset-ui/compare/@pl-superset-ui/plugin-chart-pie@0.3.2...@pl-superset-ui/plugin-chart-pie@0.4.0) (2020-12-30)
+## [0.4.1](https://github.com/behnamkvl/pl-superset-ui/compare/@pl-superset-ui/plugin-chart-radar@0.4.0...@pl-superset-ui/plugin-chart-radar@0.4.1) (2020-12-30)
+
+**Note:** Version bump only for package @pl-superset-ui/plugin-chart-radar
+
+
+
+
+
+# [0.4.0](https://github.com/behnamkvl/pl-superset-ui/compare/@pl-superset-ui/plugin-chart-radar@0.3.2...@pl-superset-ui/plugin-chart-radar@0.4.0) (2020-12-30)
 
 
 ### Features
@@ -138,7 +138,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## 0.3.2 (2020-12-30)
 
-**Note:** Version bump only for package @pl-superset-ui/plugin-chart-pie
+**Note:** Version bump only for package @pl-superset-ui/plugin-chart-radar
 
 
 
@@ -146,7 +146,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## 0.3.1 (2020-12-29)
 
-**Note:** Version bump only for package @pl-superset-ui/plugin-chart-pie
+**Note:** Version bump only for package @pl-superset-ui/plugin-chart-radar
 
 
 
@@ -164,6 +164,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 ### Features
 
 * add legend position ([97f6922](https://github.com/behnamkvl/pl-superset-ui/commit/97f692268c91754ca3f49d1d25c5b3ae298f7670))
-* add legend position to pie ([306abd9](https://github.com/behnamkvl/pl-superset-ui/commit/306abd91596c3eb6eb4e692d7d0a99b93f6e6548))
-* Add Pie chart ([ced5f21](https://github.com/behnamkvl/pl-superset-ui/commit/ced5f2185ddfec2003d0b88b42c075beea0f0cb2))
+* add legend position to radar ([306abd9](https://github.com/behnamkvl/pl-superset-ui/commit/306abd91596c3eb6eb4e692d7d0a99b93f6e6548))
+* Add Radar chart ([ced5f21](https://github.com/behnamkvl/pl-superset-ui/commit/ced5f2185ddfec2003d0b88b42c075beea0f0cb2))
 * Composed chart with multi charts ([7842327](https://github.com/behnamkvl/pl-superset-ui/commit/784232758f4109e484f3052b45445f16c470d53a))
