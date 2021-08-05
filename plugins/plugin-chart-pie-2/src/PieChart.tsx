@@ -184,7 +184,7 @@ const PieChart: FC<RadarProps<string, string>> = memo(props => {
       {notification && <Notification onClick={closeNotification}>{notification}</Notification>}
       <RechartsRadarChart key={updater} width={chartWidth} height={height}>
       <PolarGrid />
-      <PolarAngleAxis dataKey={props.dataKey} />
+      <PolarAngleAxis {...radarProps} />
       <PolarRadiusAxis angle={30} domain={[0, 150]} />
         {/* {showLegend && (
           <Legend
