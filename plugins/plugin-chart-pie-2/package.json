@@ -1,6 +1,6 @@
 {
   "name": "@pl-superset-ui/plugin-chart-pie-2",
-  "version": "0.7.9",
+  "version": "0.7.10",
   "description": "Superset Chart - Pie - 2",
   "pluginName": "PieChartPlugin2",
   "sideEffects": false,

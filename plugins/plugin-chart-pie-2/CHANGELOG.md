@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.7.10 (2021-08-05)
+
+**Note:** Version bump only for package @pl-superset-ui/plugin-chart-pie-2
+
+
+
+
+
 ## [0.7.9](https://github.com/behnamkvl/pl-superset-ui/compare/@pl-superset-ui/plugin-chart-pie@0.7.8...@pl-superset-ui/plugin-chart-pie@0.7.9) (2021-07-24)
 
 **Note:** Version bump only for package @pl-superset-ui/plugin-chart-pie
