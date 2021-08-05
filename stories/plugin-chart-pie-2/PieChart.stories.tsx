@@ -17,40 +17,45 @@
  * under the License.
  */
 import React from 'react';
-import { D3_FORMAT_OPTIONS } from '@superset-ui/chart-controls';
 import { ChartProps, supersetTheme, ThemeProvider } from '@superset-ui/core';
-import WaterfallChart from '../../plugins/plugin-chart-waterfall/src/components/WaterfallChart';
-import transformProps from '../../plugins/plugin-chart-waterfall/src/plugin/transformProps';
-import { legendTop } from '../../plugins/plugin-chart-waterfall/test/__mocks__/waterfallProps';
+import PieChart from '../../plugins/plugin-chart-pie-2/src/PieChart';
+import { LabelTypes } from '../../plugins/plugin-chart-pie-2/src/utils';
+import transformProps from '../../plugins/plugin-chart-pie-2/src/plugin/transformProps';
+import { legendTopPercentage } from '../../plugins/plugin-chart-pie-2/test/__mocks__/radarProps';
 import { extractTransformProps } from '../utils';
 
 export default {
-  title: 'Plugins/Waterfall Chart new',
-  component: WaterfallChart,
+  title: 'Plugins/Pie Chart 2',
+  component: PieChart,
+  parameters: {
+    chromatic: { delay: 2000 },
+  },
   argTypes: {
-    xAxisDataKey: { table: { disable: true } },
-    dataKey: { table: { disable: true } },
-    error: { table: { disable: true } },
-    onBarClick: { table: { disable: true } },
-    resetFilters: { table: { disable: true } },
     data: { table: { disable: true } },
-    numbersFormat: {
+    dataKey: { table: { disable: true } },
+    baseColor: { table: { disable: true } },
+    colorScheme: { table: { disable: true } },
+    groupBy: { table: { disable: true } },
+    onClick: { table: { disable: true } },
+    labelType: {
       control: {
         type: 'select',
-        options: D3_FORMAT_OPTIONS.map(([option]) => option),
+        options: Object.values(LabelTypes),
       },
     },
   },
 };
 
-const Template = args => (
+const DefaultTemplate = args => (
   <ThemeProvider theme={supersetTheme}>
-    <WaterfallChart {...extractTransformProps({ args, props: legendTop, transformProps })} />
+    <PieChart {...extractTransformProps({ args, props: legendTopPercentage, transformProps })} />
   </ThemeProvider>
 );
 
-export const Default = Template.bind({});
+
+export const Default = DefaultTemplate.bind({});
 Default.args = {
-  ...transformProps((legendTop as unknown) as ChartProps),
-  queriesData: legendTop.queriesData,
+  ...transformProps((legendTopPercentage as unknown) as ChartProps),
+  queriesData: legendTopPercentage.queriesData,
 };
+
