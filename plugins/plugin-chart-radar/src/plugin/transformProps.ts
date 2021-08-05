@@ -17,7 +17,7 @@
  * under the License.
  */
 import { ChartProps } from '@superset-ui/core';
-import { PieChartData, RadarProps } from '../PieChart';
+import { RadarChartData, RadarProps } from '../RadarChart';
 import { LegendPosition } from '../utils';
 
 type FormData<G extends string, DK extends string> = {
@@ -45,7 +45,7 @@ export default function transformProps<G extends string, DK extends string>(char
     showLabels,
     legendPosition,
   } = formData as FormData<G, DK>;
-  const data = queriesData[0].data as PieChartData<G, DK>[];
+  const data = queriesData[0].data as RadarChartData<G, DK>[];
 
   return {
     name,

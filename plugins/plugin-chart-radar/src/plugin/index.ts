@@ -23,17 +23,17 @@ import transformProps from './transformProps';
 import thumbnail from '../images/thumbnail.png';
 
 const metadata = new ChartMetadata({
-  description: 'Pie',
-  name: t('Pie'),
+  description: 'Radar',
+  name: t('Radar'),
   thumbnail,
 });
 
-export default class PieChartPlugin extends ChartPlugin {
+export default class RadarChartPlugin extends ChartPlugin {
   constructor() {
     super({
       buildQuery,
       controlPanel,
-      loadChart: () => import('../PieChart'),
+      loadChart: () => import('../RadarChart'),
       metadata,
       transformProps,
     });

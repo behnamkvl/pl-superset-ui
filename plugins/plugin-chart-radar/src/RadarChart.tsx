@@ -41,7 +41,7 @@ type EventData = {
   value: string;
 };
 
-type PieStylesProps = {
+type RadarStylesProps = {
   height: number;
   width: number;
   legendPosition: LegendPosition;
@@ -49,7 +49,7 @@ type PieStylesProps = {
 
 type GroupBy<G extends string> = Record<G, string>;
 
-export type PieChartData<G extends string, DK extends string> = GroupBy<G> & Record<DK, number>;
+export type RadarChartData<G extends string, DK extends string> = GroupBy<G> & Record<DK, number>;
 
 export type RadarProps<G extends string = string, DK extends string = string> = {
   name: string,
@@ -57,7 +57,7 @@ export type RadarProps<G extends string = string, DK extends string = string> = 
   fill: string,
   height: number;
   width: number;
-  data: PieChartData<G, DK>[];
+  data: RadarChartData<G, DK>[];
   dataKey: DK;
   onClick?: RechartsFunction;
   colorScheme: string;
@@ -81,7 +81,7 @@ const Notification = styled.div`
   background-color: ${({ theme }) => theme.colors.info.light1};
 `;
 
-const Styles = styled.div<PieStylesProps>`
+const Styles = styled.div<RadarStylesProps>`
   border-radius: ${({ theme }) => theme.gridUnit * 2}px;
   height: ${({ height }) => height};
   width: ${({ width }) => width};
@@ -93,7 +93,7 @@ const Styles = styled.div<PieStylesProps>`
   }
 `;
 
-const PieChart: FC<RadarProps<string, string>> = memo(props => {
+const RadarChart: FC<RadarProps<string, string>> = memo(props => {
   const {
     name,
     stroke,
@@ -214,4 +214,4 @@ const PieChart: FC<RadarProps<string, string>> = memo(props => {
   );
 });
 
-export default PieChart;
+export default RadarChart;

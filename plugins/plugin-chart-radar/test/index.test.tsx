@@ -20,17 +20,17 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import * as recharts from 'recharts';
 import { supersetTheme, ThemeProvider } from '@superset-ui/core';
-import PieChartPlugin from '../src';
+import RadarChartPlugin from '../src';
 import transformProps from '../src/plugin/transformProps';
 import { legendLeftWithoutLabels, legendTopPercentage } from './__mocks__/radarProps';
-import PieChart from '../src/PieChart';
+import RadarChart from '../src/RadarChart';
 
 jest.mock('recharts');
 
 describe('plugin-chart-piw', () => {
-  const RechartsPieChart = jest.fn(props => <div {...props} />);
+  const RechartsRadarChart = jest.fn(props => <div {...props} />);
   const Legend = jest.fn(() => <div />);
-  const Pie = jest.fn(() => <div />);
+  const Radar = jest.fn(() => <div />);
   beforeEach(() => {
     // Recharts still have some UNSAFE react functions that failing test
     jest.spyOn(console, 'warn').mockImplementation(() => null);
@@ -38,9 +38,9 @@ describe('plugin-chart-piw', () => {
     jest.clearAllMocks();
 
     // @ts-ignore
-    recharts.PieChart = RechartsPieChart;
+    recharts.RadarChart = RechartsRadarChart;
     // @ts-ignore
-    recharts.Pie = Pie;
+    recharts.Radar = Radar;
     // @ts-ignore
     recharts.Legend = Legend;
   });
@@ -50,19 +50,19 @@ describe('plugin-chart-piw', () => {
       <ThemeProvider theme={supersetTheme}>
         {/*
        // @ts-ignore (no need emulate all props) */}
-        <PieChart {...transformProps(props)} />
+        <RadarChart {...transformProps(props)} />
       </ThemeProvider>,
     );
 
   it('exists', () => {
-    expect(PieChartPlugin).toBeDefined();
+    expect(RadarChartPlugin).toBeDefined();
   });
 
   it('Chart with legend top / percentage labels ', () => {
     getWrapper(legendTopPercentage);
     expect({
-      RadarChartProps: RechartsPieChart.mock.calls[1],
-      RadarProps: Pie.mock.calls[1],
+      RadarChartProps: RechartsRadarChart.mock.calls[1],
+      RadarProps: Radar.mock.calls[1],
       LegendProps: Legend.mock.calls[1],
     }).toMatchSnapshot();
   });
@@ -70,8 +70,8 @@ describe('plugin-chart-piw', () => {
   it('Chart with legend left / without labels', () => {
     getWrapper(legendLeftWithoutLabels);
     expect({
-      RadarChartProps: RechartsPieChart.mock.calls[1],
-      RadarProps: Pie.mock.calls[1],
+      RadarChartProps: RechartsRadarChart.mock.calls[1],
+      RadarProps: Radar.mock.calls[1],
       LegendProps: Legend.mock.calls[1],
     }).toMatchSnapshot();
   });

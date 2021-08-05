@@ -1,8 +1,15 @@
 {
+<<<<<<< HEAD:plugins/plugin-chart-radar/package.json
+  "name": "@pl-superset-ui/plugin-chart-radar",
+  "version": "0.7.9",
+  "description": "Superset Chart - Radar",
+  "pluginName": "RadarChartPlugin",
+=======
   "name": "@pl-superset-ui/plugin-chart-pie-2",
   "version": "0.7.10",
   "description": "Superset Chart - Pie - 2",
   "pluginName": "PieChartPlugin2",
+>>>>>>> master:plugins/plugin-chart-pie-2/package.json
   "sideEffects": false,
   "main": "lib/index.js",
   "module": "esm/index.js",
