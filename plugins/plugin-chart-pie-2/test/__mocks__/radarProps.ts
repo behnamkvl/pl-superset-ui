@@ -32,9 +32,9 @@ export const legendTopPercentage = {
   height: 800,
   queriesData: [queryData],
   width: 400,
-  name: 'sssss',
+  name: 'aaa',
   stroke: '#820a9d',
-  fill: '#820a9d',
+  fill: '#8a0a9d',
 };
 
 export const legendLeftWithoutLabels = {
