@@ -203,9 +203,9 @@ const PieChart: FC<RadarProps<string, string>> = memo(props => {
         )} */}
         {((isSideLegend && legendWidth) || !isSideLegend) && (
           <RechartsRadar {...radarProps} fillOpacity={0.6}>
-            {currentData?.map(entry => (
+            {/* {currentData?.map(entry => (
               <Cell fill={CategoricalColorNamespace.getScale(colorScheme)(entry[groupBy])} />
-            ))}
+            ))} */}
           </RechartsRadar>
         )}
       <Legend />
