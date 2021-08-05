@@ -48,6 +48,9 @@ export default function transformProps<G extends string, DK extends string>(char
   const data = queriesData[0].data as PieChartData<G, DK>[];
 
   return {
+    name: 'sssss',
+    stroke: '#82ca9d',
+    fill: '#82ca9d',
     dataKey: metric.label,
     width,
     legendPosition,

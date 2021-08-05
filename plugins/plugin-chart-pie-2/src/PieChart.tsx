@@ -49,6 +49,9 @@ type GroupBy<G extends string> = Record<G, string>;
 export type PieChartData<G extends string, DK extends string> = GroupBy<G> & Record<DK, number>;
 
 export type RadarProps<G extends string = string, DK extends string = string> = {
+  name: string,
+  stroke: string,
+  fill: string,
   height: number;
   width: number;
   data: PieChartData<G, DK>[];
@@ -155,9 +158,9 @@ const PieChart: FC<RadarProps<string, string>> = memo(props => {
     isSideLegend && legendWidth ? Math.max((outerRadius + chartMargin) * 2 + legendWidth, width) : width;
 
   const radarProps: RechartsRadarProps & { key?: string | number } = {
-    name: 'aaaa',
-    stroke: '#8884d8',
-    fill: '#8884d8',
+    // name: 'aaaa',
+    // stroke: '#8884d8',
+    // fill: '#8884d8',
     key: updater,
     data: currentData,
     dataKey,
