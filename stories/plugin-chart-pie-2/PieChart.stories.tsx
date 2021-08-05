@@ -18,10 +18,10 @@
  */
 import React from 'react';
 import { ChartProps, supersetTheme, ThemeProvider } from '@superset-ui/core';
-import PieChart from '../../plugins/plugin-chart-pie/src/PieChart';
-import { LabelTypes } from '../../plugins/plugin-chart-pie/src/utils';
-import transformProps from '../../plugins/plugin-chart-pie/src/plugin/transformProps';
-import { legendTopPercentage } from '../../plugins/plugin-chart-pie/test/__mocks__/pieProps';
+import PieChart from '../../plugins/plugin-chart-pie-2/src/PieChart';
+import { LabelTypes } from '../../plugins/plugin-chart-pie-2/src/utils';
+import transformProps from '../../plugins/plugin-chart-pie-2/src/plugin/transformProps';
+import { legendTopPercentage } from '../../plugins/plugin-chart-pie-2/test/__mocks__/pieProps';
 import { extractTransformProps } from '../utils';
 
 export default {
