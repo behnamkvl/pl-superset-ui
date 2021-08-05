@@ -25,7 +25,7 @@ import { legendTopPercentage } from '../../plugins/plugin-chart-pie/test/__mocks
 import { extractTransformProps } from '../utils';
 
 export default {
-  title: 'Plugins/Pie Chart',
+  title: 'Plugins/Pie Chart test',
   component: PieChart,
   parameters: {
     chromatic: { delay: 2000 },
