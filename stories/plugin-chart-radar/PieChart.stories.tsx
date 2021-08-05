@@ -25,7 +25,7 @@ import { legendTopPercentage } from '../../plugins/plugin-chart-radar/test/__moc
 import { extractTransformProps } from '../utils';
 
 export default {
-  title: 'Plugins/Radar Chart 2',
+  title: 'Plugins/Radar Chart',
   component: RadarChart,
   parameters: {
     chromatic: { delay: 2000 },
