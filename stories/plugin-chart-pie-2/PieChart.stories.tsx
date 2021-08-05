@@ -33,7 +33,6 @@ export default {
   argTypes: {
     data: { table: { disable: true } },
     dataKey: { table: { disable: true } },
-    isDonut: { table: { disable: true } },
     baseColor: { table: { disable: true } },
     colorScheme: { table: { disable: true } },
     groupBy: { table: { disable: true } },
@@ -53,13 +52,6 @@ const DefaultTemplate = args => (
   </ThemeProvider>
 );
 
-const DonutTemplate = args => (
-  <ThemeProvider theme={supersetTheme}>
-    <PieChart
-      {...extractTransformProps({ args, props: legendTopPercentage, transformProps, formData: { isDonut: true } })}
-    />
-  </ThemeProvider>
-);
 
 export const Default = DefaultTemplate.bind({});
 Default.args = {
@@ -67,14 +59,3 @@ Default.args = {
   queriesData: legendTopPercentage.queriesData,
 };
 
-export const Donut = DonutTemplate.bind({});
-Donut.args = {
-  ...transformProps(({
-    ...legendTopPercentage,
-    formData: {
-      ...legendTopPercentage.formData,
-      isDonut: true,
-    },
-  } as unknown) as ChartProps),
-  queriesData: legendTopPercentage.queriesData,
-};
