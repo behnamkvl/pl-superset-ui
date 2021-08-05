@@ -92,6 +92,9 @@ const Styles = styled.div<PieStylesProps>`
 
 const PieChart: FC<RadarProps<string, string>> = memo(props => {
   const {
+    name,
+    stroke,
+    fill,
     dataKey,
     data,
     height,
@@ -161,6 +164,9 @@ const PieChart: FC<RadarProps<string, string>> = memo(props => {
     // name: 'aaaa',
     // stroke: '#8884d8',
     // fill: '#8884d8',
+    name,
+    stroke,
+    fill,
     key: updater,
     data: currentData,
     dataKey,

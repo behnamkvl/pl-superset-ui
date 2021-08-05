@@ -29,7 +29,7 @@ const queryData = {
 
 export const legendTopPercentage = {
   formData: formDataLegendTopPercent,
-  height: 400,
+  height: 800,
   queriesData: [queryData],
   width: 800,
 };
