@@ -186,7 +186,7 @@ const PieChart: FC<RadarProps<string, string>> = memo(props => {
       <PolarGrid />
       <PolarAngleAxis dataKey="subject" />
       <PolarRadiusAxis angle={30} domain={[0, 150]} />
-        {showLegend && (
+        {/* {showLegend && (
           <Legend
             onClick={handleLegendClick}
             {...getLegendProps(legendPosition, height, legendWidth)}
@@ -200,7 +200,7 @@ const PieChart: FC<RadarProps<string, string>> = memo(props => {
               color: CategoricalColorNamespace.getScale(colorScheme)(item[groupBy]),
             }))}
           />
-        )}
+        )} */}
         {((isSideLegend && legendWidth) || !isSideLegend) && (
           <RechartsRadar {...radarProps}>
             {currentData?.map(entry => (
