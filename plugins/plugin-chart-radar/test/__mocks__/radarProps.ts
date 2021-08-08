@@ -12,9 +12,9 @@ const formDataLegendTopPercent = {
   //   label: 'AVG(efficiency)',
   // },
   labelType: 'percent',
-  showLegend: true,
+  showLegend: false,
   legendPosition: 'top',
-  showLabels: true,
+  showLabels: false,
   labelColors: {},
 };
 const queryData = {

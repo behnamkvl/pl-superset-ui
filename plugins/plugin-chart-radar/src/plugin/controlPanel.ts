@@ -30,8 +30,8 @@ const groupBy: { name: string; config: SelectControlConfig<ColumnMeta, 'SelectCo
   },
 };
 
-const metrics: { name: string; config: SelectControlConfig<string | Record<string, any>, 'MetricsControl'> } = {
-  name: 'metrics',
+const metric: { name: string; config: SelectControlConfig<string | Record<string, any>, 'MetricsControl'> } = {
+  name: 'metric',
   config: {
     ...sharedControls.metrics,
     validators: [validateNonEmpty],
