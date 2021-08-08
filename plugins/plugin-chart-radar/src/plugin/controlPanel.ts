@@ -35,7 +35,7 @@ const metric: { name: string; config: SelectControlConfig<string | Record<string
   config: {
     ...sharedControls.metrics,
     validators: [validateNonEmpty],
-    multi: false,
+    multi: true,
   },
 };
 const showLabels = {

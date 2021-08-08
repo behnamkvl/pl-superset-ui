@@ -59,6 +59,7 @@ export type RadarProps<G extends string = string, DK extends string = string> = 
   width: number;
   data: RadarChartData<G, DK>[];
   dataKey: DK;
+  dataKey2: DK;
   onClick?: RechartsFunction;
   colorScheme: string;
   baseColor: string;
@@ -99,6 +100,7 @@ const RadarChart: FC<RadarProps<string, string>> = memo(props => {
     stroke,
     fill,
     dataKey,
+    dataKey2,
     data,
     height,
     width,
@@ -173,6 +175,7 @@ const RadarChart: FC<RadarProps<string, string>> = memo(props => {
     key: updater,
     data: currentData,
     dataKey,
+    dataKey2,
     label: showLabels
       ? labelProps => renderActiveShape({ ...labelProps, groupBy, labelType } as ActiveShapeProps)
       : false,
@@ -182,7 +185,7 @@ const RadarChart: FC<RadarProps<string, string>> = memo(props => {
   return (
     <Styles height={height} width={width} legendPosition={legendPosition} ref={rootRef}>
       {notification && <Notification onClick={closeNotification}>{notification}</Notification>}
-      <RechartsRadarChart key={updater} width={chartWidth} height={height}>
+      <RechartsRadarChart key={updater} width={chartWidth} height={height} data={currentData} >
       <PolarGrid />
       <PolarAngleAxis dataKey={groupBy} />
       <PolarRadiusAxis angle={30} domain={[0, 150]} />
@@ -201,13 +204,12 @@ const RadarChart: FC<RadarProps<string, string>> = memo(props => {
             }))}
           />
         )} */}
-        {((isSideLegend && legendWidth) || !isSideLegend) && (
-          <RechartsRadar {...radarProps} fillOpacity={0.6}>
-            {/* {currentData?.map(entry => (
-              <Cell fill={CategoricalColorNamespace.getScale(colorScheme)(entry[groupBy])} />
-            ))} */}
+        {/* {((isSideLegend && legendWidth) || !isSideLegend) && (
+          <RechartsRadar {...radarProps} stroke="#82ca9d" fill="#82ca9d" fillOpacity={0.6}>
           </RechartsRadar>
-        )}
+        )} */}
+      <RechartsRadar dataKey={radarProps.dataKey} stroke="#8224d8" fill="#2284d8" fillOpacity={0.2} />
+      <RechartsRadar dataKey={radarProps.dataKey2} stroke="#8884d8" fill="#8884d8" fillOpacity={0.2} />
       <Legend />
       </RechartsRadarChart>
     </Styles>

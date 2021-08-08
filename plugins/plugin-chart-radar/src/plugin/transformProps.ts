@@ -20,6 +20,13 @@ import { ChartProps } from '@superset-ui/core';
 import { RadarChartData, RadarProps } from '../RadarChart';
 import { LegendPosition } from '../utils';
 
+type MetricObject<DK extends string> = {
+  label: DK;
+  column: {
+    verbose_name: DK;
+  };
+};
+
 type FormData<G extends string, DK extends string> = {
   colorScheme: string;
   groupby: G;
@@ -31,14 +38,15 @@ type FormData<G extends string, DK extends string> = {
   labelType: string;
   showLabels: boolean;
   legendPosition: LegendPosition;
+  metrics: MetricObject<DK>[];
 };
 
 export default function transformProps<G extends string, DK extends string>(chartProps: ChartProps): RadarProps<G, DK> {
   const { name, stroke, fill, width, height, formData, queriesData } = chartProps;
+  const metrics = formData.metrics.map(({ label }) => label).sort();
   const {
     colorScheme,
     groupby,
-    metric,
     colorPicker,
     showLegend,
     labelType,
@@ -51,11 +59,12 @@ export default function transformProps<G extends string, DK extends string>(char
     name,
     stroke,
     fill,
-    dataKey: metric.label,
+    dataKey: metrics[0],
+    dataKey2: metrics[1],
     width,
     legendPosition,
     height,
-    data: data.filter(item => item[metric.label] !== null).filter(item => item[groupby] !== null),
+    data: data.filter(item => item[metrics[0]] !== null).filter(item => item[groupby] !== null),
     baseColor: colorPicker,
     colorScheme,
     showLegend,
