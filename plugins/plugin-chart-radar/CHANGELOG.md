@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.13](https://github.com/behnamkvl/pl-superset-ui/compare/@pl-superset-ui/plugin-chart-radar@0.7.12...@pl-superset-ui/plugin-chart-radar@0.7.13) (2021-08-08)
+
+**Note:** Version bump only for package @pl-superset-ui/plugin-chart-radar
+
+
+
+
+
 ## [0.7.12](https://github.com/behnamkvl/pl-superset-ui/compare/@pl-superset-ui/plugin-chart-radar@0.7.11...@pl-superset-ui/plugin-chart-radar@0.7.12) (2021-08-08)
 
 **Note:** Version bump only for package @pl-superset-ui/plugin-chart-radar
