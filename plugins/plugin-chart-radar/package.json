@@ -1,6 +1,6 @@
 {
   "name": "@pl-superset-ui/plugin-chart-radar",
-  "version": "0.7.15",
+  "version": "0.7.16",
   "description": "Superset Chart - Radar",
   "pluginName": "RadarChartPlugin",
   "sideEffects": false,
