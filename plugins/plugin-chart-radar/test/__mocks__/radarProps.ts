@@ -2,7 +2,7 @@ const formDataLegendTopPercent = {
   groupby: 'subject',
   metrics: [
     {
-      label: 'first label'
+      label: 'AVG(efficiency)'
     },
     {
       label: 'second'
