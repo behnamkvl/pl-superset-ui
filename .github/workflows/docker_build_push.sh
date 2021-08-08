@@ -12,10 +12,9 @@ cd $1
 #
 # Build the  image
 #
-echo "COMMIT_SHA: ${COMMIT_SHA}"
 
 docker build \
-  -t "${REPOSITORY_NAME}:${COMMIT_SHA}" \
+  -t "${REPOSITORY_NAME}:${TAG_NAME}" \
   -t "${REPOSITORY_NAME}:latest" \
   --label "built_at=$(date)" \
   --label "build_actor=${GITHUB_ACTOR}" \
