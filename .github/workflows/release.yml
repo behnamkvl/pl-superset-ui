@@ -88,7 +88,7 @@ jobs:
         DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
         REPOSITORY_NAME: 'behnamkvl/apache-superset'
         TAG_NAME: '1.3'
-        COMMIT_SHA: $CI_SHA_SHORT
+        COMMIT_SHA: ${{ secrets.CI_SHA_SHORT }}
       run: |
         chmod +x $GITHUB_WORKSPACE/$PROJECT_WORKING_DIRECTORY/.github/workflows/docker_build_push.sh
         $GITHUB_WORKSPACE/$PROJECT_WORKING_DIRECTORY/.github/workflows/docker_build_push.sh $GITHUB_WORKSPACE/superset
