@@ -19,7 +19,7 @@ const formDataLegendTopPercent = {
 };
 const queryData = {
   data: [
-    { subject: '2020', 'first': 100, 'second': 90, 'fullMark': 150 },
+    { subject: '2020', 'first': 140, 'second': 90, 'fullMark': 150 },
     {
       subject: '2018',
       'first': 50,

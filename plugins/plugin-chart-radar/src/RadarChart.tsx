@@ -188,7 +188,7 @@ const RadarChart: FC<RadarProps<string, string>> = memo(props => {
       <RechartsRadarChart key={updater} width={chartWidth} height={height} data={currentData} >
       <PolarGrid gridType='circle'/>
       <PolarAngleAxis dataKey={groupBy} />
-      <PolarRadiusAxis polarRadius={[0, 50, 100, 150]} />
+      <PolarRadiusAxis />
         {/* {showLegend && (
           <Legend
             onClick={handleLegendClick}
