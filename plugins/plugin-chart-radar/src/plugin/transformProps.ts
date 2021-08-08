@@ -30,20 +30,20 @@ type MetricObject<DK extends string> = {
 type FormData<G extends string, DK extends string> = {
   colorScheme: string;
   groupby: G;
-  metric: {
-    label: DK;
-  };
+  // metric: {
+  //   label: DK;
+  // };
   colorPicker: string;
   showLegend: boolean;
   labelType: string;
   showLabels: boolean;
   legendPosition: LegendPosition;
-  metrics: MetricObject<DK>[];
+  metric: MetricObject<DK>[];
 };
 
 export default function transformProps<G extends string, DK extends string>(chartProps: ChartProps): RadarProps<G, DK> {
   const { name, stroke, fill, width, height, formData, queriesData } = chartProps;
-  const metrics = formData.metrics.map(({ label }) => label).sort();
+  const metric = formData.metric.map(({ label }) => label).sort();
   const {
     colorScheme,
     groupby,
@@ -59,12 +59,12 @@ export default function transformProps<G extends string, DK extends string>(char
     name,
     stroke,
     fill,
-    dataKey: metrics[0],
-    dataKey2: metrics[1],
+    dataKey: metric[0],
+    dataKey2: metric[1],
     width,
     legendPosition,
     height,
-    data: data.filter(item => item[metrics[0]] !== null).filter(item => item[groupby] !== null),
+    data: data.filter(item => item[metric[0]] !== null).filter(item => item[groupby] !== null),
     baseColor: colorPicker,
     colorScheme,
     showLegend,
