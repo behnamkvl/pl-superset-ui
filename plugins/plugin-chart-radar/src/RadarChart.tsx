@@ -208,8 +208,8 @@ const RadarChart: FC<RadarProps<string, string>> = memo(props => {
           <RechartsRadar {...radarProps} stroke="#82ca9d" fill="#82ca9d" fillOpacity={0.6}>
           </RechartsRadar>
         )} */}
-      <RechartsRadar dataKey={radarProps.dataKey} stroke="#1df5a9" fill="#6ddeb6" fillOpacity={0.2} />
-      <RechartsRadar dataKey={radarProps.dataKey2} stroke="#f77e8c" fill="#f7a1ab" fillOpacity={0.2} />
+      <RechartsRadar dataKey={radarProps.dataKey} stroke="#f77e8c" fill="#f7a1ab" fillOpacity={0.2} />
+      <RechartsRadar dataKey={radarProps.dataKey2} stroke="#1df5a9" fill="#6ddeb6" fillOpacity={0.2} />
       <Legend />
       </RechartsRadarChart>
     </Styles>
