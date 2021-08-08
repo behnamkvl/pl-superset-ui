@@ -14,7 +14,7 @@ cd $1
 #
 
 docker build \
-  -t "${REPOSITORY_NAME}:${TAG_NAME}" \
+  -t "${REPOSITORY_NAME}:${CI_SHA_SHORT}" \
   -t "${REPOSITORY_NAME}:latest" \
   --label "built_at=$(date)" \
   --label "build_actor=${GITHUB_ACTOR}" \
