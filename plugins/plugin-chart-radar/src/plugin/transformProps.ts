@@ -52,6 +52,7 @@ export default function transformProps<G extends string, DK extends string>(char
     stroke,
     fill,
     dataKey: metric.label,
+    dataKey2: "AVG(net)",
     width,
     legendPosition,
     height,
