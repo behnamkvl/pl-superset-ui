@@ -1,6 +1,6 @@
 const formDataLegendTopPercent = {
   groupby: 'subject',
-  metrics: [
+  metric: [
     {
       label: 'first'
     },
