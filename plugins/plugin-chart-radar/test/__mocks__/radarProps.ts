@@ -11,19 +11,21 @@ const formDataLegendTopPercent = {
 };
 const queryData = {
   data: [
-    { subject: '2020', 'AVG(efficiency)': 100, 'fullMark': 150 },
+    { subject: '2020', 'AVG(efficiency)': 100, 'AVG(net)': 90, 'fullMark': 150 },
     {
       subject: '2018',
       'AVG(efficiency)': 50,
+      'AVG(net)': 100,
       'fullMark': 150
     },
-    { subject: '2019', 'AVG(efficiency)': 100, 'fullMark': 150 },
+    { subject: '2019', 'AVG(efficiency)': 100, 'AVG(net)': 50, 'fullMark': 150 },
     {
       subject: 'Total Subject',
       'AVG(efficiency)': 100,
+      'AVG(net)': 56,
       'fullMark': 150,
     },
-    { subject: '2017', 'AVG(efficiency)': 100, 'fullMark': 150 },
+    { subject: '2017', 'AVG(efficiency)': 100, 'AVG(net)': 10, 'fullMark': 150 },
   ],
 };
 
