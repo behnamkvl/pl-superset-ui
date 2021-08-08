@@ -59,7 +59,7 @@ export type RadarProps<G extends string = string, DK extends string = string> = 
   width: number;
   data: RadarChartData<G, DK>[];
   dataKey: DK;
-  dataKey2: DK;
+  dataKey2: string;
   onClick?: RechartsFunction;
   colorScheme: string;
   baseColor: string;
