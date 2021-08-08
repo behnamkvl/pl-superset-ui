@@ -1,6 +1,6 @@
 const formDataLegendTopPercent = {
   groupby: 'subject',
-  customMetrics: [
+  metrics: [
     {
       label: 'first label'
     },
@@ -8,9 +8,9 @@ const formDataLegendTopPercent = {
       label: 'second'
     }
   ],
-  metric: {
-    label: 'AVG(efficiency)',
-  },
+  // metric: {
+  //   label: 'AVG(efficiency)',
+  // },
   labelType: 'percent',
   showLegend: true,
   legendPosition: 'top',
