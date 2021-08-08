@@ -1,5 +1,13 @@
 const formDataLegendTopPercent = {
   groupby: 'subject',
+  customMetrics: [
+    {
+      label: 'first label'
+    },
+    {
+      label: 'second'
+    }
+  ],
   metric: {
     label: 'AVG(efficiency)',
   },
@@ -11,21 +19,21 @@ const formDataLegendTopPercent = {
 };
 const queryData = {
   data: [
-    { subject: '2020', 'AVG(efficiency)': 100, 'AVG(net)': 90, 'fullMark': 150 },
+    { subject: '2020', 'AVG(efficiency)': 100, 'second': 90, 'fullMark': 150 },
     {
       subject: '2018',
       'AVG(efficiency)': 50,
-      'AVG(net)': 100,
+      'second': 100,
       'fullMark': 150
     },
-    { subject: '2019', 'AVG(efficiency)': 100, 'AVG(net)': 50, 'fullMark': 150 },
+    { subject: '2019', 'AVG(efficiency)': 100, 'second': 50, 'fullMark': 150 },
     {
       subject: 'Total Subject',
       'AVG(efficiency)': 100,
-      'AVG(net)': 56,
+      'second': 56,
       'fullMark': 150,
     },
-    { subject: '2017', 'AVG(efficiency)': 100, 'AVG(net)': 10, 'fullMark': 150 },
+    { subject: '2017', 'AVG(efficiency)': 100, 'second': 10, 'fullMark': 150 },
   ],
 };
 
