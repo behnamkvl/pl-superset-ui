@@ -185,7 +185,7 @@ const RadarChart: FC<RadarProps<string, string>> = memo(props => {
       <RechartsRadarChart key={updater} width={chartWidth} height={height}>
       <PolarGrid />
       <PolarAngleAxis dataKey={groupBy} />
-      <PolarRadiusAxis angle={30} domain={[0, 150]} />
+      <PolarRadiusAxis />
         {/* {showLegend && (
           <Legend
             onClick={handleLegendClick}
@@ -202,7 +202,7 @@ const RadarChart: FC<RadarProps<string, string>> = memo(props => {
           />
         )} */}
         {((isSideLegend && legendWidth) || !isSideLegend) && (
-          <RechartsRadar {...radarProps} fillOpacity={0.6}>
+          <RechartsRadar {...radarProps} stroke="#82ca9d" fill="#82ca9d" fillOpacity={0.6}>
             {/* {currentData?.map(entry => (
               <Cell fill={CategoricalColorNamespace.getScale(colorScheme)(entry[groupBy])} />
             ))} */}
